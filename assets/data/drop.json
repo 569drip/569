@@ -1,0 +1,42 @@
+{
+  "drop": {
+    "number": 1,
+    "name": "",
+    "status": "coming-soon",
+    "launch_date": "",
+    "timezone": "America/Halifax",
+    "collection": "all",
+    "run_size": 150
+  },
+  "copy": {
+    "drop_name": "{drop}",
+    "eyebrow_coming_soon": "{drop} — coming soon",
+    "eyebrow_countdown": "{drop} — {launch}",
+    "eyebrow_live": "{drop} — live now",
+    "eyebrow_sold_out": "{drop} — sold out",
+    "cta_live": "Shop {drop}",
+    "cta_waiting": "Get notified",
+    "cta_sold_out": "Get told about {next}",
+    "spec_run": "{run}",
+    "featured_heading": "The first six",
+    "newsletter_title": "{upcoming} is\nalready drawn.",
+    "newsletter_body": "We email when a run goes live and when it sells out. That's the whole newsletter.",
+    "shop_heading_coming_soon": "{drop} isn't\nlive yet.",
+    "shop_heading_countdown": "{drop} is\nalmost here.",
+    "shop_intro_waiting": "Nothing to buy yet. Get on the list and you'll hear the second it drops.",
+    "shop_intro_live": "{pieces} pieces. When they're gone they're gone — we don't reprint a joke.",
+    "shop_intro_sold_out": "Every piece is gone. We don't reprint a joke — {next} is already drawn.",
+    "sold_out_message": "{drop} is sold out.",
+    "live_empty": "Pieces are landing any second. This page checks again on its own.",
+    "holding_heading_live": "In the meantime,\nthere's {drop}",
+    "holding_heading_waiting": "In the meantime,\n{drop} is on its way",
+    "holding_heading_sold_out": "{drop} is gone.\n{next} is already drawn",
+    "holding_body_live": "{pieces} pieces that already say the quiet part. When they're gone they're gone.",
+    "holding_body_waiting": "Designed, finished, and not live yet. Get on the list and you'll hear first.",
+    "holding_body_sold_out": "Every piece sold. Get on the list and you'll hear about {next} first.",
+    "principle_run": "{run}, then it's retired. You will not see your shirt on six people at the same party."
+  },
+  "site": {
+    "announcement": ""
+  }
+}

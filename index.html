@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#171717]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V.VI.IX — Wear what you won't say</title>
+<meta name="description" content="V.VI.IX (569) — a bold label built on dark humour, sex positivity and hard minimalism. Text-based prints for people who were never any good at being subtle. Limited runs only.">
+<meta name="theme-color" content="#171717">
+<link rel="icon" href="assets/img/logo/favicon.png">
+
+<meta property="og:title" content="V.VI.IX — Wear what you won't say">
+<meta property="og:description" content="Text-based prints for people who were never any good at being subtle. Limited runs only.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: {
+      ink: "#171717", paper: "#f5f5f5", graphite: "#343434",
+      inkt1: "#303030", inkt2: "#4a4a4a", inkt3: "#636363",
+      grap1: "#5a5a5a", grap2: "#676767", grap3: "#808080",
+      void: "#000000", gray2: "#0a0a0a", gray4: "#969696",
+      line: "#2a2a2a", linestrong: "#454545"
+    },
+    fontFamily: {
+      display: ['Montserrat', 'sans-serif'],
+      body: ['Poppins', 'sans-serif'],
+      mono: ['JetBrains Mono', 'monospace']
+    }
+  } }
+};
+</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="shell edge flex items-center justify-between h-[68px] gap-6">
+    <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="V.VI.IX home">
+      <img src="assets/img/logo/mark.png" alt="" class="w-6 h-6 invert" aria-hidden="true">
+      <span class="wordmark text-[1.05rem] text-paper">V.VI.IX</span>
+      <span class="region" data-region hidden>
+        <span class="region__flag" data-region-flag aria-hidden="true"></span>
+        <span class="region__name" data-region-name></span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 lg:gap-9 label !text-paper !tracking-[0.16em] whitespace-nowrap" aria-label="Primary">
+      <a href="shop.html" class="link-draw">Shop</a>
+      <a href="custom.html" class="link-draw">Custom Art</a>
+      <a href="about.html" class="link-draw">About</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="shop.html" class="hidden sm:inline-flex btn btn-primary !min-h-[40px] !py-2 !px-5 shrink-0 whitespace-nowrap" data-drop-cta="short">Shop drop 001</a>
+
+      <a href="cart.html" class="relative inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Cart">
+        <span class="sr-only" data-cart-label>Cart, empty</span>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 6h18l-1.6 12.2a2 2 0 0 1-2 1.8H6.6a2 2 0 0 1-2-1.8L3 6Z"/>
+          <path d="M8.5 9V5.5a3.5 3.5 0 1 1 7 0V9"/>
+        </svg>
+        <span data-cart-count hidden class="absolute top-1 right-1 min-w-[17px] h-[17px] px-1 grid place-items-center bg-paper text-ink font-mono text-[10px] font-medium"></span>
+      </a>
+
+      <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-nav" hidden class="md:hidden border-t border-line bg-ink">
+    <nav class="edge py-6 flex flex-col gap-1" aria-label="Mobile">
+      <a href="shop.html" class="display text-[2rem] py-3">Shop</a>
+      <a href="custom.html" class="display text-[2rem] py-3">Custom Art</a>
+      <a href="about.html" class="display text-[2rem] py-3">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative overflow-hidden border-b border-line">
+    <!-- The X mark at architectural scale: brand device, not decoration -->
+    <img src="assets/img/logo/mark.png" alt=""
+         class="mark-watermark invert -right-[10vw] top-1/2 -translate-y-1/2 w-[58vw] max-w-[760px] hidden md:block">
+
+    <div class="shell edge relative pt-[clamp(4rem,12vh,8rem)] pb-[clamp(3rem,8vh,5rem)]">
+      <p class="label accent-text reveal flex items-center gap-2"><span data-drop-text="eyebrow">Drop 001</span><span class="live-dot" aria-hidden="true" data-drop-show="countdown live" hidden></span></p>
+
+      <h1 class="display display-tight mt-6 reveal text-[clamp(2.75rem,9.2vw,8.5rem)]" style="--reveal-delay:80ms">
+        Wear what<br>you won't<br>say<span class="accent">.</span>
+      </h1>
+
+      <p class="prose-narrow text-[length:var(--step-1)] text-gray4 font-light mt-8 reveal" style="--reveal-delay:160ms">
+        Text-based prints for people who were never
+        any good at being subtle.
+      </p>
+
+      <div class="mt-10" data-drop-countdown data-drop-show="countdown" hidden></div>
+
+      <div class="flex flex-wrap gap-3 mt-10 reveal" style="--reveal-delay:240ms">
+        <a href="shop.html" class="btn btn-primary" data-drop-cta data-live-label="Shop the drop">
+          <span data-drop-cta-label>Shop the drop</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="custom.html" class="btn btn-ghost">Something's coming</a>
+      </div>
+    </div>
+
+    <!-- Spec strip -->
+    <div class="shell edge relative border-t border-line">
+      <dl class="grid grid-cols-2 md:grid-cols-4">
+        <div class="py-6 md:pr-8 border-b md:border-b-0 md:border-r border-line">
+          <dt class="label !text-gray4">Run size</dt>
+          <dd class="font-mono text-paper mt-1.5" data-drop-text="spec_run">Limited run</dd>
+        </div>
+        <div class="py-6 md:px-8 border-b md:border-b-0 md:border-r border-line">
+          <dt class="label !text-gray4">Restock</dt>
+          <dd class="font-mono text-paper mt-1.5">Never</dd>
+        </div>
+        <div class="py-6 md:px-8 md:border-r border-line">
+          <dt class="label !text-gray4">Shipping</dt>
+          <dd class="font-mono text-paper mt-1.5">Worldwide</dd>
+        </div>
+        <div class="py-6 md:pl-8">
+          <dt class="label !text-gray4">Custom art</dt>
+          <dd class="font-mono text-paper mt-1.5">Classified</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <section class="border-b border-line py-5 bg-gray2" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee__track">
+        <!-- Two identical tracks make the loop seamless -->
+        <span class="label !text-gray4 whitespace-nowrap">Limited runs</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">No restocks</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Something's coming</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Say it louder</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">569</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Limited runs</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">No restocks</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Something's coming</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Say it louder</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">569</span><span class="text-inkt2">&times;</span>
+      </div>
+      <div class="marquee__track" aria-hidden="true">
+        <span class="label !text-gray4 whitespace-nowrap">Limited runs</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">No restocks</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Something's coming</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Say it louder</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">569</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Limited runs</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">No restocks</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Something's coming</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">Say it louder</span><span class="text-inkt2">&times;</span>
+        <span class="label !text-gray4 whitespace-nowrap">569</span><span class="text-inkt2">&times;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MANIFESTO ===================== -->
+  <section class="shell edge py-[clamp(4rem,12vh,9rem)] border-b border-line" aria-labelledby="intent">
+    <p class="label reveal">Our intent</p>
+    <div class="grid lg:grid-cols-12 gap-x-16 gap-y-10 mt-8">
+      <h2 id="intent" class="lg:col-span-7 display text-[length:var(--step-3)] reveal">
+        We would rather print forty things worth saying than four hundred that aren't.
+      </h2>
+      <div class="lg:col-span-5 lg:pt-3 space-y-5 text-gray4 font-light reveal" style="--reveal-delay:120ms">
+        <p>Everything here started as a line someone was too polite to finish. We print it in full, on heavyweight cotton, and then we stop printing it.</p>
+        <p>No seasonal churn. No hundred-colourway drops. A short list, made properly, in black and white and one shade of red &mdash; because the joke should be the loudest thing you're wearing.</p>
+        <a href="about.html" class="link-draw inline-flex items-center gap-2 text-paper font-medium pt-1">
+          Read the whole thing
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED DROP ===================== -->
+  <section class="shell edge py-[clamp(4rem,12vh,9rem)] border-b border-line" aria-labelledby="drop" data-drop-show="live sold-out" hidden>
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-12">
+      <div>
+        <p class="label reveal" data-drop-text="drop_name">Drop 001</p>
+        <h2 id="drop" class="display text-[length:var(--step-2)] mt-4 reveal" data-drop-text="featured_heading">The first six</h2>
+      </div>
+      <a href="shop.html" class="link-draw label !text-paper reveal">View all &rarr;</a>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-12" data-stagger data-featured-products>
+      <p class="col-span-full text-gray4">Loading the drop…</p>
+    </div>
+  </section>
+
+  <!-- ===================== CUSTOM ART TEASER ===================== -->
+  <section class="relative overflow-hidden border-b border-line bg-paper text-ink on-paper" aria-labelledby="soon">
+    <img src="assets/img/logo/mark.png" alt=""
+         class="mark-watermark !opacity-[0.055] -right-[8vw] -bottom-[30%] w-[46vw] hidden md:block">
+    <div class="shell edge py-[clamp(4rem,13vh,9rem)] relative">
+      <p class="label !text-grap1 reveal">Custom art &mdash; classified</p>
+
+      <h2 id="soon" class="display text-[length:var(--step-3)] mt-6 max-w-[16ch] reveal">
+        There's a second thing coming.
+      </h2>
+
+      <p class="prose-measure text-grap1 font-light mt-7 reveal" style="--reveal-delay:100ms">
+        We're not describing it yet. What we'll say is that it won't be
+        something you pick off a grid, and no two will ever be the same.
+      </p>
+
+      <dl class="mt-10 max-w-xl reveal" style="--reveal-delay:160ms">
+        <div class="flex items-baseline justify-between gap-8 py-4 border-t border-ink/15">
+          <dt class="label !text-grap1">What it is</dt>
+          <dd><span class="redact w-[min(40vw,220px)]" role="img" aria-label="Redacted"></span></dd>
+        </div>
+        <div class="flex items-baseline justify-between gap-8 py-4 border-t border-ink/15">
+          <dt class="label !text-grap1">What it costs</dt>
+          <dd><span class="redact w-[min(20vw,120px)]" role="img" aria-label="Redacted"></span></dd>
+        </div>
+        <div class="flex items-baseline justify-between gap-8 py-4 border-y border-ink/15">
+          <dt class="label !text-grap1">When</dt>
+          <dd class="font-mono">Sooner than you think</dd>
+        </div>
+      </dl>
+
+      <a href="custom.html" class="btn !bg-[color:var(--accent)] !text-black hover:!bg-[color:var(--accent-hover)] mt-10 reveal" style="--reveal-delay:220ms">
+        Get told first
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="shell edge py-[clamp(4rem,12vh,9rem)] border-b border-line" aria-labelledby="wearers">
+    <p class="label reveal">From the wearers</p>
+    <h2 id="wearers" class="sr-only">Customer reviews</h2>
+    <div class="grid md:grid-cols-3 gap-x-10 gap-y-12 mt-10" data-stagger>
+      <figure class="reveal">
+        <blockquote class="text-[length:var(--step-1)] font-light leading-snug">"Wore it to a family dinner. My mother has not spoken to me since. Worth every dollar."</blockquote>
+        <figcaption class="label !text-gray4 mt-5">Dani K. &mdash; Not Kinky tee</figcaption>
+      </figure>
+      <figure class="reveal">
+        <blockquote class="text-[length:var(--step-1)] font-light leading-snug">"Bought it as a joke. It is now the only hoodie I wear. I have no further comment."</blockquote>
+        <figcaption class="label !text-gray4 mt-5">Marcus T. &mdash; Unavailable hoodie</figcaption>
+      </figure>
+      <figure class="reveal">
+        <blockquote class="text-[length:var(--step-1)] font-light leading-snug">"Heavier cotton than I expected for the price. Washed it eight times, the print hasn't cracked."</blockquote>
+        <figcaption class="label !text-gray4 mt-5">Priya S. &mdash; 569 tee</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== SIGNUP ===================== -->
+  <section class="relative overflow-hidden" aria-labelledby="signup">
+    <img src="assets/img/logo/mark.png" alt="" class="mark-watermark invert left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[70vw] max-w-[600px]">
+    <div class="shell edge py-[clamp(4rem,14vh,10rem)] text-center relative">
+      <h2 id="signup" class="display text-[length:var(--step-3)] reveal" data-drop-text="newsletter_title">The next drop is<br>already drawn.</h2>
+      <p class="text-gray4 font-light mt-6 max-w-md mx-auto reveal" style="--reveal-delay:100ms" data-drop-text="newsletter_body">
+        We email when a run goes live and when it sells out. That's the whole newsletter.
+      </p>
+
+      <form data-signup novalidate class="mt-10 max-w-md mx-auto flex flex-col sm:flex-row gap-3 reveal" style="--reveal-delay:160ms">
+        <label for="email-home" class="sr-only">Email address</label>
+        <input id="email-home" name="email" type="email" required autocomplete="email"
+               class="field flex-1" placeholder="you@example.com"
+               aria-describedby="signup-status-home">
+        <button type="submit" class="btn btn-primary shrink-0">Notify me</button>
+      </form>
+      <p id="signup-status-home" data-signup-status role="status" aria-live="polite"
+         class="label !tracking-[0.1em] mt-4 min-h-[1.25rem] data-[state=ok]:!text-paper data-[state=error]:!text-paper"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="border-t border-line bg-gray2">
+  <div class="shell edge py-16 grid gap-12 md:grid-cols-12">
+    <div class="md:col-span-5">
+      <span class="wordmark text-[1.6rem] text-paper">V.VI.IX</span>
+      <p class="prose-narrow text-gray4 font-light text-sm mt-4">
+        A bold label built on dark humour, sex positivity and hard minimalism. Limited runs, printed properly, never repeated.
+      </p>
+    </div>
+
+    <nav class="md:col-span-3" aria-labelledby="f-shop">
+      <h2 id="f-shop" class="label !text-gray4">Shop</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="shop.html" class="link-draw">All pieces</a></li>
+        <li><a href="shop.html" class="link-draw" data-drop-text="drop_name">Drop 001</a></li>
+        <li><a href="custom.html" class="link-draw">Custom art</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-info">
+      <h2 id="f-info" class="label !text-gray4">Info</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="about.html" class="link-draw">About</a></li>
+        <li><a href="about.html#contact" class="link-draw">Contact</a></li>
+        <li><a href="about.html#faq" class="link-draw">Shipping &amp; returns</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-social">
+      <h2 id="f-social" class="label !text-gray4">Follow</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="#" class="link-draw">Instagram</a></li>
+        <li><a href="#" class="link-draw">TikTok</a></li>
+        <li><a href="#" class="link-draw">Pinterest</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="shell edge py-6 border-t border-line flex flex-wrap items-center justify-between gap-4">
+    <p class="label !text-gray4 !tracking-[0.12em]">&copy; <span data-year>2026</span> V.VI.IX &mdash; 569</p>
+    <p class="label !text-gray4 !tracking-[0.12em]">Intended for adults</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/locale.js"></script>
+<script src="assets/js/drop.js"></script>
+<script src="assets/js/fourthwall-config.js"></script>
+<script src="assets/js/fourthwall.js"></script>
+</body>
+</html>

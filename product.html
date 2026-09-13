@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#171717]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I'm Not Kinky — Oversized Tee — V.VI.IX</title>
+<meta name="description" content="A V.VI.IX piece. Limited run, never restocked.">
+<meta name="theme-color" content="#171717">
+<link rel="icon" href="assets/img/logo/favicon.png">
+
+<meta property="og:title" content="I'm Not Kinky — Oversized Tee — V.VI.IX">
+<meta property="og:description" content="A V.VI.IX piece. Limited run, never restocked.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: {
+      ink: "#171717", paper: "#f5f5f5", graphite: "#343434",
+      inkt1: "#303030", inkt2: "#4a4a4a", inkt3: "#636363",
+      grap1: "#5a5a5a", grap2: "#676767", grap3: "#808080",
+      void: "#000000", gray2: "#0a0a0a", gray4: "#969696",
+      line: "#2a2a2a", linestrong: "#454545"
+    },
+    fontFamily: {
+      display: ['Montserrat', 'sans-serif'],
+      body: ['Poppins', 'sans-serif'],
+      mono: ['JetBrains Mono', 'monospace']
+    }
+  } }
+};
+</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="shell edge flex items-center justify-between h-[68px] gap-6">
+    <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="V.VI.IX home">
+      <img src="assets/img/logo/mark.png" alt="" class="w-6 h-6 invert" aria-hidden="true">
+      <span class="wordmark text-[1.05rem] text-paper">V.VI.IX</span>
+      <span class="region" data-region hidden>
+        <span class="region__flag" data-region-flag aria-hidden="true"></span>
+        <span class="region__name" data-region-name></span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 lg:gap-9 label !text-paper !tracking-[0.16em] whitespace-nowrap" aria-label="Primary">
+      <a href="shop.html" class="link-draw !text-paper" aria-current="page">Shop</a>
+      <a href="custom.html" class="link-draw">Custom Art</a>
+      <a href="about.html" class="link-draw">About</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="shop.html" class="hidden sm:inline-flex btn btn-primary !min-h-[40px] !py-2 !px-5 shrink-0 whitespace-nowrap" data-drop-cta="short">Shop drop 001</a>
+
+      <a href="cart.html" class="relative inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Cart">
+        <span class="sr-only" data-cart-label>Cart, empty</span>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 6h18l-1.6 12.2a2 2 0 0 1-2 1.8H6.6a2 2 0 0 1-2-1.8L3 6Z"/>
+          <path d="M8.5 9V5.5a3.5 3.5 0 1 1 7 0V9"/>
+        </svg>
+        <span data-cart-count hidden class="absolute top-1 right-1 min-w-[17px] h-[17px] px-1 grid place-items-center bg-paper text-ink font-mono text-[10px] font-medium"></span>
+      </a>
+
+      <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-nav" hidden class="md:hidden border-t border-line bg-ink">
+    <nav class="edge py-6 flex flex-col gap-1" aria-label="Mobile">
+      <a href="shop.html" class="display text-[2rem] py-3">Shop</a>
+      <a href="custom.html" class="display text-[2rem] py-3">Custom Art</a>
+      <a href="about.html" class="display text-[2rem] py-3">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="shell edge py-[clamp(3rem,7vh,5rem)]">
+    <div class="grid lg:grid-cols-2 gap-x-16 gap-y-12 items-start">
+      <div>
+        <div class="card-media min-h-[55vh] lg:min-h-[70vh]">
+          <div class="card-art bg-[#f7f7f7]"><img data-product-image src="assets/img/logo/mark.png" alt="" class="w-full h-full object-contain"></div>
+        </div>
+        <div class="grid grid-cols-5 gap-2 mt-3" data-product-gallery aria-label="Product images"></div>
+      </div>
+
+      <div class="lg:pt-2">
+        <p class="label accent-text" data-product-type>V.VI.IX</p>
+        <h1 id="p-title" class="display text-[clamp(2.2rem,5.5vw,3.75rem)] mt-4">Loading…</h1>
+        <div class="flex items-baseline gap-4 mt-5">
+          <p class="font-mono text-[length:var(--step-1)] text-paper" data-price-display>—</p>
+          <p class="label !text-gray4">Checkout securely</p>
+        </div>
+        <p class="prose-measure text-gray4 font-light mt-6">Made to order. Select your available options below; production, shipping and checkout are handled through Fourthwall.</p>
+
+        <form data-add-to-cart class="mt-9" novalidate>
+          <fieldset class="border-0 p-0 m-0" data-option-section="color">
+            <legend class="label mb-3">Colour — <span class="text-paper" data-color-label>Choose</span></legend>
+            <div class="flex flex-wrap gap-2" data-toggle-group="f-color"></div>
+            <input type="hidden" name="color" id="f-color" value="">
+          </fieldset>
+
+          <fieldset class="border-0 p-0 m-0 mt-8" data-option-section="size">
+            <legend class="label mb-3 flex items-center justify-between w-full gap-4"><span>Size / option</span><a href="#fit" class="link-draw !text-gray4 normal-case tracking-normal">Fit guide</a></legend>
+            <div class="flex flex-wrap gap-2" data-toggle-group="f-size"></div>
+            <input type="hidden" name="size" id="f-size" value="">
+            <p class="label !text-gray4 !tracking-[0.1em] mt-3" data-stock-note>Select an available option.</p>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary btn-block mt-6">Add to cart</button>
+          <p data-cart-status role="status" aria-live="polite" class="label !tracking-[0.1em] mt-4 min-h-[1.25rem]"></p>
+        </form>
+
+        <div class="mt-10 border-t border-line">
+          <details class="acc border-b border-line" id="fit">
+            <summary><span class="font-medium">Product details</span><svg class="chev w-4 h-4 text-gray4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="pb-5 text-gray4 font-light text-sm space-y-2"><p>Product specifications and care instructions are provided on the Fourthwall checkout/product record where applicable.</p></div>
+          </details>
+          <details class="acc border-b border-line">
+            <summary><span class="font-medium">Shipping &amp; returns</span><svg class="chev w-4 h-4 text-gray4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="pb-5 text-gray4 font-light text-sm space-y-2"><p>Fulfillment, shipping and applicable returns are handled through Fourthwall.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell edge py-[clamp(3rem,10vh,6rem)] border-t border-line" aria-labelledby="rel">
+    <div class="flex items-end justify-between gap-6 mb-10"><h2 id="rel" class="display text-[length:var(--step-2)]">More to say</h2><a href="shop.html" class="link-draw label !text-paper">View all →</a></div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-12" data-stagger data-featured-products></div>
+  </section>
+</main>
+
+<script>
+/* Colour label mirror + gallery thumb state */
+(function () {
+  var label = document.querySelector("[data-color-label]");
+  var group = document.querySelector('[data-toggle-group="f-color"]');
+  if (group && label) {
+    group.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-value]");
+      if (btn) label.textContent = btn.dataset.value;
+    });
+  }
+
+  var thumbs = document.querySelectorAll('[aria-label="Product images"] button');
+  thumbs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      thumbs.forEach(function (o) {
+        o.setAttribute("aria-pressed", String(o === t));
+        o.classList.toggle("border-paper", o === t);
+        o.classList.toggle("border-transparent", o !== t);
+      });
+    });
+  });
+})();
+</script>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="border-t border-line bg-gray2">
+  <div class="shell edge py-16 grid gap-12 md:grid-cols-12">
+    <div class="md:col-span-5">
+      <span class="wordmark text-[1.6rem] text-paper">V.VI.IX</span>
+      <p class="prose-narrow text-gray4 font-light text-sm mt-4">
+        A bold label built on dark humour, sex positivity and hard minimalism. Limited runs, printed properly, never repeated.
+      </p>
+    </div>
+
+    <nav class="md:col-span-3" aria-labelledby="f-shop">
+      <h2 id="f-shop" class="label !text-gray4">Shop</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="shop.html" class="link-draw">All pieces</a></li>
+        <li><a href="shop.html" class="link-draw" data-drop-text="drop_name">Drop 001</a></li>
+        <li><a href="custom.html" class="link-draw">Custom art</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-info">
+      <h2 id="f-info" class="label !text-gray4">Info</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="about.html" class="link-draw">About</a></li>
+        <li><a href="about.html#contact" class="link-draw">Contact</a></li>
+        <li><a href="about.html#faq" class="link-draw">Shipping &amp; returns</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-social">
+      <h2 id="f-social" class="label !text-gray4">Follow</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="#" class="link-draw">Instagram</a></li>
+        <li><a href="#" class="link-draw">TikTok</a></li>
+        <li><a href="#" class="link-draw">Pinterest</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="shell edge py-6 border-t border-line flex flex-wrap items-center justify-between gap-4">
+    <p class="label !text-gray4 !tracking-[0.12em]">&copy; <span data-year>2026</span> V.VI.IX &mdash; 569</p>
+    <p class="label !text-gray4 !tracking-[0.12em]">Intended for adults</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/locale.js"></script>
+<script src="assets/js/drop.js"></script>
+<script src="assets/js/fourthwall-config.js"></script>
+<script src="assets/js/fourthwall.js"></script>
+</body>
+</html>

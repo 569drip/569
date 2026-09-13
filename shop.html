@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#171717]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-drop-title="Shop {drop} — V.VI.IX">Shop — V.VI.IX</title>
+<meta name="description" content="Limited runs of text-based prints. When a drop sells out, it's gone.">
+<meta name="theme-color" content="#171717">
+<link rel="icon" href="assets/img/logo/favicon.png">
+
+<meta property="og:title" content="Shop — V.VI.IX" data-drop-content="Shop {drop} — V.VI.IX">
+<meta property="og:description" content="Limited runs of text-based prints. When a drop sells out, it's gone.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: {
+      ink: "#171717", paper: "#f5f5f5", graphite: "#343434",
+      inkt1: "#303030", inkt2: "#4a4a4a", inkt3: "#636363",
+      grap1: "#5a5a5a", grap2: "#676767", grap3: "#808080",
+      void: "#000000", gray2: "#0a0a0a", gray4: "#969696",
+      line: "#2a2a2a", linestrong: "#454545"
+    },
+    fontFamily: {
+      display: ['Montserrat', 'sans-serif'],
+      body: ['Poppins', 'sans-serif'],
+      mono: ['JetBrains Mono', 'monospace']
+    }
+  } }
+};
+</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="shell edge flex items-center justify-between h-[68px] gap-6">
+    <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="V.VI.IX home">
+      <img src="assets/img/logo/mark.png" alt="" class="w-6 h-6 invert" aria-hidden="true">
+      <span class="wordmark text-[1.05rem] text-paper">V.VI.IX</span>
+      <span class="region" data-region hidden>
+        <span class="region__flag" data-region-flag aria-hidden="true"></span>
+        <span class="region__name" data-region-name></span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 lg:gap-9 label !text-paper !tracking-[0.16em] whitespace-nowrap" aria-label="Primary">
+      <a href="shop.html" class="link-draw !text-paper" aria-current="page">Shop</a>
+      <a href="custom.html" class="link-draw">Custom Art</a>
+      <a href="about.html" class="link-draw">About</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="shop.html" class="hidden sm:inline-flex btn btn-primary !min-h-[40px] !py-2 !px-5 shrink-0 whitespace-nowrap" data-drop-cta="short">Shop drop 001</a>
+
+      <a href="cart.html" class="relative inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Cart">
+        <span class="sr-only" data-cart-label>Cart, empty</span>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 6h18l-1.6 12.2a2 2 0 0 1-2 1.8H6.6a2 2 0 0 1-2-1.8L3 6Z"/>
+          <path d="M8.5 9V5.5a3.5 3.5 0 1 1 7 0V9"/>
+        </svg>
+        <span data-cart-count hidden class="absolute top-1 right-1 min-w-[17px] h-[17px] px-1 grid place-items-center bg-paper text-ink font-mono text-[10px] font-medium"></span>
+      </a>
+
+      <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-nav" hidden class="md:hidden border-t border-line bg-ink">
+    <nav class="edge py-6 flex flex-col gap-1" aria-label="Mobile">
+      <a href="shop.html" class="display text-[2rem] py-3">Shop</a>
+      <a href="custom.html" class="display text-[2rem] py-3">Custom Art</a>
+      <a href="about.html" class="display text-[2rem] py-3">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== PAGE HEAD ===================== -->
+  <section class="shell edge pt-[clamp(2.5rem,7vh,5rem)] pb-10 border-b border-line relative overflow-hidden">
+    <img src="assets/img/logo/mark.png" alt="" class="mark-watermark invert -right-[8vw] -top-[10vh] w-[40vw] hidden lg:block">
+    <p class="label accent-text reveal flex items-center gap-2"><span data-drop-text="eyebrow">Drop 001</span><span class="live-dot" aria-hidden="true" data-drop-show="countdown live" hidden></span></p>
+    <h1 class="display display-tight mt-5 text-[clamp(2.5rem,7.5vw,6rem)] reveal">Everything<br>we've said<span class="accent">.</span></h1>
+    <p class="prose-narrow text-gray4 font-light mt-6 reveal" style="--reveal-delay:100ms" data-drop-text="shop_intro">
+      When they're gone they're gone &mdash; we don't reprint a joke.
+    </p>
+  </section>
+
+  <!-- ===================== DROP NOT LIVE YET ===================== -->
+  <section id="signup" class="shell edge py-[clamp(3rem,10vh,6rem)] border-b border-line" data-drop-show="coming-soon countdown" hidden aria-labelledby="wait-h">
+    <h2 id="wait-h" class="display text-[length:var(--step-3)]" data-drop-text="shop_heading">Not live yet.</h2>
+    <div class="mt-9" data-drop-countdown data-drop-show="countdown" hidden></div>
+    <form data-signup novalidate class="mt-10 max-w-md flex flex-col sm:flex-row gap-3">
+      <label for="email-shop" class="sr-only">Email address</label>
+      <input id="email-shop" name="email" type="email" required autocomplete="email"
+             class="field flex-1" placeholder="you@example.com" aria-describedby="signup-status-shop">
+      <button type="submit" class="btn btn-primary shrink-0">Notify me</button>
+    </form>
+    <p id="signup-status-shop" data-signup-status role="status" aria-live="polite"
+       class="label !tracking-[0.1em] mt-4 min-h-[1.25rem] data-[state=ok]:!text-paper data-[state=error]:!text-paper"></p>
+  </section>
+
+  <!-- ===================== FILTER BAR ===================== -->
+  <section class="shell edge py-6 border-b border-line sticky top-[68px] z-[30] bg-ink/95 backdrop-blur-sm" aria-label="Filter products" data-drop-show="live sold-out" hidden>
+    <div class="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Category" data-filters>
+      <button type="button" class="size-btn !min-w-0 px-4 !font-mono whitespace-nowrap" data-filter="all" aria-pressed="true">Everything <span class="opacity-70">0</span></button>
+      <button type="button" class="size-btn !min-w-0 px-4 !font-mono whitespace-nowrap" data-filter="tees" aria-pressed="false">Tees <span class="opacity-70">0</span></button>
+      <button type="button" class="size-btn !min-w-0 px-4 !font-mono whitespace-nowrap" data-filter="hoodies" aria-pressed="false">Hoodies <span class="opacity-70">0</span></button>
+      <button type="button" class="size-btn !min-w-0 px-4 !font-mono whitespace-nowrap" data-filter="lingerie" aria-pressed="false">Lingerie <span class="opacity-70">0</span></button>
+      <button type="button" class="size-btn !min-w-0 px-4 !font-mono whitespace-nowrap" data-filter="accessories" aria-pressed="false">Accessories <span class="opacity-70">0</span></button>
+    </div>
+  </section>
+
+  <!-- ===================== GRID ===================== -->
+  <section class="shell edge py-[clamp(3rem,8vh,5rem)]" aria-labelledby="grid-h" data-drop-show="live sold-out" hidden>
+    <h2 id="grid-h" class="sr-only">Products</h2>
+    <p class="label accent-text mb-10" data-drop-show="sold-out" hidden data-drop-text="sold_out_message">Sold out.</p>
+    <p class="sr-only" role="status" aria-live="polite" data-result-count></p>
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-12" data-stagger data-grid>
+      <p class="col-span-full text-gray4">Loading the drop…</p>
+    </div>
+    <p class="label !text-gray4 text-center mt-16 hidden" data-empty>Nothing in that category yet.</p>
+  </section>
+
+  <!-- ===================== CUSTOM CTA ===================== -->
+  <section class="border-t border-line bg-paper text-ink on-paper">
+    <div class="shell edge py-[clamp(3rem,10vh,6rem)] flex flex-wrap items-center justify-between gap-8">
+      <div>
+        <p class="label !text-grap1">Custom art &mdash; classified</p>
+        <h2 class="display text-[length:var(--step-2)] mt-4">There's a second thing coming.</h2>
+      </div>
+      <a href="custom.html" class="btn !bg-[color:var(--accent)] !text-black hover:!bg-[color:var(--accent-hover)]">
+        Get told first
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<script>
+/* Category filter — progressive enhancement over a fully rendered grid. */
+(function () {
+  var bar = document.querySelector("[data-filters]");
+  if (!bar) return;
+  var empty = document.querySelector("[data-empty]");
+  var count = document.querySelector("[data-result-count]");
+
+  bar.addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-filter]");
+    if (!btn) return;
+
+    bar.querySelectorAll("[data-filter]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b === btn));
+    });
+
+    var want = btn.dataset.filter;
+    var groups = Array.prototype.slice.call(document.querySelectorAll("[data-cat]"));
+    var shown = 0;
+    groups.forEach(function (g) {
+      var match = want === "all" || g.dataset.cat === want;
+      g.hidden = !match;
+      if (match) shown++;
+    });
+
+    if (empty) empty.classList.toggle("hidden", shown > 0);
+    if (count) count.textContent = shown + (shown === 1 ? " piece" : " pieces") + " shown";
+  });
+})();
+</script>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="border-t border-line bg-gray2">
+  <div class="shell edge py-16 grid gap-12 md:grid-cols-12">
+    <div class="md:col-span-5">
+      <span class="wordmark text-[1.6rem] text-paper">V.VI.IX</span>
+      <p class="prose-narrow text-gray4 font-light text-sm mt-4">
+        A bold label built on dark humour, sex positivity and hard minimalism. Limited runs, printed properly, never repeated.
+      </p>
+    </div>
+
+    <nav class="md:col-span-3" aria-labelledby="f-shop">
+      <h2 id="f-shop" class="label !text-gray4">Shop</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="shop.html" class="link-draw">All pieces</a></li>
+        <li><a href="shop.html" class="link-draw" data-drop-text="drop_name">Drop 001</a></li>
+        <li><a href="custom.html" class="link-draw">Custom art</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-info">
+      <h2 id="f-info" class="label !text-gray4">Info</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="about.html" class="link-draw">About</a></li>
+        <li><a href="about.html#contact" class="link-draw">Contact</a></li>
+        <li><a href="about.html#faq" class="link-draw">Shipping &amp; returns</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-social">
+      <h2 id="f-social" class="label !text-gray4">Follow</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="#" class="link-draw">Instagram</a></li>
+        <li><a href="#" class="link-draw">TikTok</a></li>
+        <li><a href="#" class="link-draw">Pinterest</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="shell edge py-6 border-t border-line flex flex-wrap items-center justify-between gap-4">
+    <p class="label !text-gray4 !tracking-[0.12em]">&copy; <span data-year>2026</span> V.VI.IX &mdash; 569</p>
+    <p class="label !text-gray4 !tracking-[0.12em]">Intended for adults</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/locale.js"></script>
+<script src="assets/js/drop.js"></script>
+<script src="assets/js/fourthwall-config.js"></script>
+<script src="assets/js/fourthwall.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#171717]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Art — Coming Soon — V.VI.IX</title>
+<meta name="description" content="Something is coming to V.VI.IX. We're not saying what yet. Join the list to find out first.">
+<meta name="theme-color" content="#171717">
+<link rel="icon" href="assets/img/logo/favicon.png">
+
+<meta property="og:title" content="Custom Art — Coming Soon — V.VI.IX">
+<meta property="og:description" content="Something is coming to V.VI.IX. We're not saying what yet. Join the list to find out first.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: {
+      ink: "#171717", paper: "#f5f5f5", graphite: "#343434",
+      inkt1: "#303030", inkt2: "#4a4a4a", inkt3: "#636363",
+      grap1: "#5a5a5a", grap2: "#676767", grap3: "#808080",
+      void: "#000000", gray2: "#0a0a0a", gray4: "#969696",
+      line: "#2a2a2a", linestrong: "#454545"
+    },
+    fontFamily: {
+      display: ['Montserrat', 'sans-serif'],
+      body: ['Poppins', 'sans-serif'],
+      mono: ['JetBrains Mono', 'monospace']
+    }
+  } }
+};
+</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="shell edge flex items-center justify-between h-[68px] gap-6">
+    <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="V.VI.IX home">
+      <img src="assets/img/logo/mark.png" alt="" class="w-6 h-6 invert" aria-hidden="true">
+      <span class="wordmark text-[1.05rem] text-paper">V.VI.IX</span>
+      <span class="region" data-region hidden>
+        <span class="region__flag" data-region-flag aria-hidden="true"></span>
+        <span class="region__name" data-region-name></span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 lg:gap-9 label !text-paper !tracking-[0.16em] whitespace-nowrap" aria-label="Primary">
+      <a href="shop.html" class="link-draw">Shop</a>
+      <a href="custom.html" class="link-draw !text-paper" aria-current="page">Custom Art</a>
+      <a href="about.html" class="link-draw">About</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="shop.html" class="hidden sm:inline-flex btn btn-primary !min-h-[40px] !py-2 !px-5 shrink-0 whitespace-nowrap" data-drop-cta="short">Shop drop 001</a>
+
+      <a href="cart.html" class="relative inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Cart">
+        <span class="sr-only" data-cart-label>Cart, empty</span>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 6h18l-1.6 12.2a2 2 0 0 1-2 1.8H6.6a2 2 0 0 1-2-1.8L3 6Z"/>
+          <path d="M8.5 9V5.5a3.5 3.5 0 1 1 7 0V9"/>
+        </svg>
+        <span data-cart-count hidden class="absolute top-1 right-1 min-w-[17px] h-[17px] px-1 grid place-items-center bg-paper text-ink font-mono text-[10px] font-medium"></span>
+      </a>
+
+      <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 text-paper" aria-label="Menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-nav" hidden class="md:hidden border-t border-line bg-ink">
+    <nav class="edge py-6 flex flex-col gap-1" aria-label="Mobile">
+      <a href="shop.html" class="display text-[2rem] py-3">Shop</a>
+      <a href="custom.html" class="display text-[2rem] py-3">Custom Art</a>
+      <a href="about.html" class="display text-[2rem] py-3">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== TEASER HERO ===================== -->
+  <section class="relative overflow-hidden border-b border-line">
+    <img src="assets/img/logo/mark.png" alt=""
+         class="mark-watermark invert left-1/2 -translate-x-1/2 top-[46%] -translate-y-1/2 w-[80vw] max-w-[820px]">
+
+    <div class="shell edge relative pt-[clamp(3.5rem,14vh,8rem)] pb-[clamp(3.5rem,12vh,7rem)] text-center">
+      <p class="label accent-text reveal flex items-center justify-center gap-2">
+        Classified &mdash; not yet live<span class="live-dot" aria-hidden="true"></span>
+      </p>
+
+      <h1 class="display display-tight mt-7 text-[clamp(2.75rem,10vw,9rem)] reveal" style="--reveal-delay:80ms">
+        We're making<br>something<span class="accent">.</span>
+      </h1>
+
+      <p class="text-[length:var(--step-1)] text-gray4 font-light mt-8 max-w-[34ch] mx-auto reveal" style="--reveal-delay:160ms">
+        We're not going to tell you what it is.
+        You'll know when everyone else does &mdash; or sooner, if you're on the list.
+      </p>
+
+      <form id="signup" data-signup novalidate class="mt-11 max-w-md mx-auto flex flex-col sm:flex-row gap-3 reveal" style="--reveal-delay:240ms">
+        <label for="tease-email" class="sr-only">Email address</label>
+        <input id="tease-email" name="email" type="email" required autocomplete="email"
+               class="field flex-1" placeholder="you@example.com"
+               aria-describedby="tease-status">
+        <button type="submit" class="btn btn-primary shrink-0">Tell me first</button>
+      </form>
+      <p id="tease-status" data-signup-status role="status" aria-live="polite"
+         class="label !tracking-[0.1em] mt-4 min-h-[1.25rem] data-[state=ok]:!text-paper data-[state=error]:!text-paper"></p>
+    </div>
+  </section>
+
+  <!-- ===================== REDACTED SPEC ===================== -->
+  <section class="shell edge py-[clamp(3rem,10vh,6rem)] border-b border-line" aria-labelledby="what-we-know">
+    <p class="label reveal">Everything we're willing to confirm</p>
+    <h2 id="what-we-know" class="sr-only">Known details</h2>
+
+    <dl class="mt-10 border-t border-line" data-stagger>
+      <div class="flex items-baseline justify-between gap-8 py-6 border-b border-line reveal">
+        <dt class="label !text-gray4 shrink-0">What it is</dt>
+        <dd class="text-right"><span class="redact redact-lg w-[min(46vw,320px)]" role="img" aria-label="Redacted"></span></dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-8 py-6 border-b border-line reveal">
+        <dt class="label !text-gray4 shrink-0">How it works</dt>
+        <dd class="text-right"><span class="redact redact-lg w-[min(38vw,260px)]" role="img" aria-label="Redacted"></span></dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-8 py-6 border-b border-line reveal">
+        <dt class="label !text-gray4 shrink-0">What it costs</dt>
+        <dd class="text-right"><span class="redact redact-lg w-[min(22vw,140px)]" role="img" aria-label="Redacted"></span></dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-8 py-6 border-b border-line reveal">
+        <dt class="label !text-gray4 shrink-0">Who it's for</dt>
+        <dd class="text-right font-mono text-paper">You, probably</dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-8 py-6 border-b border-line reveal">
+        <dt class="label !text-gray4 shrink-0">When</dt>
+        <dd class="text-right font-mono text-paper">Sooner than you think</dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-8 py-6 border-b border-line reveal">
+        <dt class="label !text-gray4 shrink-0">Run size</dt>
+        <dd class="text-right"><span class="redact redact-lg w-[min(18vw,110px)]" role="img" aria-label="Redacted"></span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ===================== THE ONLY HINT ===================== -->
+  <section class="bg-paper text-ink on-paper border-b border-line">
+    <div class="shell edge py-[clamp(3.5rem,12vh,7rem)] grid lg:grid-cols-12 gap-x-16 gap-y-8 items-center">
+      <p class="lg:col-span-3 label !text-grap1">The only hint</p>
+      <h2 class="lg:col-span-9 display text-[length:var(--step-3)]">
+        If you've ever wanted something that could only ever belong to one person, wait.
+      </h2>
+    </div>
+  </section>
+
+  <!-- ===================== HOLDING PATTERN ===================== -->
+  <section class="shell edge py-[clamp(3rem,10vh,6rem)]">
+    <div class="grid md:grid-cols-2 gap-x-16 gap-y-10 items-center">
+      <div>
+        <h2 class="display text-[length:var(--step-2)] reveal"><span data-drop-text="holding_heading">In the meantime,<br>there's more</span><span class="accent">.</span></h2>
+        <p class="text-gray4 font-light mt-5 prose-narrow reveal" style="--reveal-delay:100ms" data-drop-text="holding_body">
+          When they\'re gone they\'re gone.
+        </p>
+      </div>
+      <div class="md:justify-self-end reveal" style="--reveal-delay:160ms">
+        <a href="shop.html" class="btn btn-primary" data-drop-cta data-live-label="Shop {drop}">
+          <span data-drop-cta-label>Shop now</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="border-t border-line bg-gray2">
+  <div class="shell edge py-16 grid gap-12 md:grid-cols-12">
+    <div class="md:col-span-5">
+      <span class="wordmark text-[1.6rem] text-paper">V.VI.IX</span>
+      <p class="prose-narrow text-gray4 font-light text-sm mt-4">
+        A bold label built on dark humour, sex positivity and hard minimalism. Limited runs, printed properly, never repeated.
+      </p>
+    </div>
+
+    <nav class="md:col-span-3" aria-labelledby="f-shop">
+      <h2 id="f-shop" class="label !text-gray4">Shop</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="shop.html" class="link-draw">All pieces</a></li>
+        <li><a href="shop.html" class="link-draw" data-drop-text="drop_name">Drop 001</a></li>
+        <li><a href="custom.html" class="link-draw">Custom art</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-info">
+      <h2 id="f-info" class="label !text-gray4">Info</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="about.html" class="link-draw">About</a></li>
+        <li><a href="about.html#contact" class="link-draw">Contact</a></li>
+        <li><a href="about.html#faq" class="link-draw">Shipping &amp; returns</a></li>
+      </ul>
+    </nav>
+
+    <nav class="md:col-span-2" aria-labelledby="f-social">
+      <h2 id="f-social" class="label !text-gray4">Follow</h2>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="#" class="link-draw">Instagram</a></li>
+        <li><a href="#" class="link-draw">TikTok</a></li>
+        <li><a href="#" class="link-draw">Pinterest</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="shell edge py-6 border-t border-line flex flex-wrap items-center justify-between gap-4">
+    <p class="label !text-gray4 !tracking-[0.12em]">&copy; <span data-year>2026</span> V.VI.IX &mdash; 569</p>
+    <p class="label !text-gray4 !tracking-[0.12em]">Intended for adults</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/locale.js"></script>
+<script src="assets/js/drop.js"></script>
+<script src="assets/js/fourthwall-config.js"></script>
+<script src="assets/js/fourthwall.js"></script>
+</body>
+</html>
