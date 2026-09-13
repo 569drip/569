@@ -1,0 +1,174 @@
+# Pages CMS — https://app.pagescms.org
+# Sign in with GitHub, open this repository, and "Drop control" appears as a form.
+# Saving commits assets/data/drop.json; GitHub Pages redeploys in about a minute.
+
+content:
+  - name: drop
+    label: Drop control
+    type: file
+    path: assets/data/drop.json
+    format: json
+    fields:
+      - name: drop
+        label: Current drop
+        type: object
+        fields:
+          - name: number
+            label: Drop number
+            type: number
+            required: true
+            description: 1 shows as "Drop 001". The next drop's number is worked out for you.
+          - name: name
+            label: Custom name (optional)
+            type: string
+            description: Leave empty to use "Drop 001". Fill in only to override it.
+          - name: status
+            label: Status
+            type: select
+            required: true
+            description: Countdown needs a launch date below, and switches to Live by itself at that time. Remember to unhide the products in Fourthwall at launch.
+            options:
+              values:
+                - name: coming-soon
+                  label: Coming soon (no date shown)
+                - name: countdown
+                  label: Countdown (goes live automatically)
+                - name: live
+                  label: Live now
+                - name: sold-out
+                  label: Sold out
+          - name: launch_date
+            label: Launch date & time
+            type: date
+            description: Entered as the clock in the timezone below. Every visitor counts down to the same moment.
+            options:
+              time: true
+              format: yyyy-MM-dd'T'HH:mm
+          - name: timezone
+            label: Launch timezone
+            type: select
+            options:
+              values:
+                - name: America/Halifax
+                  label: Atlantic — Halifax
+                - name: America/Toronto
+                  label: Eastern — Toronto / New York
+                - name: America/Winnipeg
+                  label: Central — Winnipeg / Chicago
+                - name: America/Edmonton
+                  label: Mountain — Edmonton / Denver
+                - name: America/Vancouver
+                  label: Pacific — Vancouver / Los Angeles
+                - name: Europe/London
+                  label: London
+                - name: Europe/Vienna
+                  label: Central Europe — Vienna / Berlin / Paris
+                - name: Africa/Johannesburg
+                  label: Johannesburg
+                - name: Asia/Kolkata
+                  label: India
+                - name: Australia/Sydney
+                  label: Sydney
+                - name: UTC
+                  label: UTC
+          - name: collection
+            label: Fourthwall collection slug
+            type: string
+            description: Which Fourthwall collection this drop sells from. Keep "all" until you create one collection per drop (e.g. drop-002).
+          - name: run_size
+            label: Run size
+            type: number
+            description: Pieces in the run, e.g. 150. Leave empty to say "Limited run".
+
+      - name: site
+        label: Site-wide
+        type: object
+        fields:
+          - name: announcement
+            label: Announcement bar
+            type: string
+            description: Thin bar above the header on every page. Leave empty to hide. Tokens work here too.
+
+      - name: copy
+        label: Wording
+        type: object
+        description: "Tokens: {drop} Drop 001 · {next} Drop 002 · {upcoming} the drop people are waiting for · {run} 150 pieces · {pieces} live product count · {launch} launch time in the visitor's timezone. A new line becomes a line break."
+        fields:
+          - name: eyebrow_coming_soon
+            label: Eyebrow — coming soon
+            type: string
+          - name: eyebrow_countdown
+            label: Eyebrow — countdown
+            type: string
+          - name: eyebrow_live
+            label: Eyebrow — live
+            type: string
+          - name: eyebrow_sold_out
+            label: Eyebrow — sold out
+            type: string
+          - name: cta_live
+            label: Button — live
+            type: string
+          - name: cta_waiting
+            label: Button — before launch
+            type: string
+          - name: cta_sold_out
+            label: Button — sold out
+            type: string
+          - name: newsletter_title
+            label: Newsletter heading
+            type: text
+          - name: newsletter_body
+            label: Newsletter text
+            type: text
+          - name: featured_heading
+            label: Home — featured products heading
+            type: string
+          - name: spec_run
+            label: Home — run size value
+            type: string
+          - name: shop_heading_coming_soon
+            label: Shop — heading, coming soon
+            type: text
+          - name: shop_heading_countdown
+            label: Shop — heading, countdown
+            type: text
+          - name: shop_intro_waiting
+            label: Shop — intro, before launch
+            type: text
+          - name: shop_intro_live
+            label: Shop — intro, live
+            type: text
+          - name: shop_intro_sold_out
+            label: Shop — intro, sold out
+            type: text
+          - name: sold_out_message
+            label: Shop — sold out notice
+            type: string
+          - name: live_empty
+            label: Shop — live but no products visible yet
+            type: text
+          - name: holding_heading_waiting
+            label: Custom art page — heading, before launch
+            type: text
+          - name: holding_heading_live
+            label: Custom art page — heading, live
+            type: text
+          - name: holding_heading_sold_out
+            label: Custom art page — heading, sold out
+            type: text
+          - name: holding_body_waiting
+            label: Custom art page — text, before launch
+            type: text
+          - name: holding_body_live
+            label: Custom art page — text, live
+            type: text
+          - name: holding_body_sold_out
+            label: Custom art page — text, sold out
+            type: text
+          - name: principle_run
+            label: About — run size principle
+            type: text
+          - name: drop_name
+            label: Footer drop link
+            type: string
